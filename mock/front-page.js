@@ -11,7 +11,7 @@ export const frontPageMockData = {
       title: 'Főcím2',
       subTitle: 'Alcím',
       description: 'Donec sed metus gravida, lacinia arcu fringilla, laoreet justo. Etiam cursus egestas orci, quis imperdiet ante bibendum id. Praesent eget facilisis libero. In congue ut diam non hendrerit. Sed at tempus lectus, a tincidunt dui. Maecenas non gravida ante. Etiam a diam leo. Vestibulum placerat urna tortor, eu tempor ipsum volutpat nec. Nulla facilisi. Nulla facilisi. Donec semper luctus nisl, nec varius ipsum tempor ut. Sed commodo, ipsum quis sodales gravida, leo augue auctor est, vitae luctus eros dolor vitae ligula. Nam cursus nulla vel lectus tincidunt, vitae pulvinar lacus semper.',
-      image: 'https://picsum.photos/600/600',
+      image: 'https://picsum.photos/600/601',
       imagePosition: 'left',
     },
     {

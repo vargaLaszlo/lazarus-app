@@ -20,27 +20,27 @@ export const proGMPageMockData = {
           {
             title: 'Lista cím2',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            image: 'https://picsum.photos/400/250',
+            image: 'https://picsum.photos/400/251',
           },
           {
             title: 'Lista cím3',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            image: 'https://picsum.photos/400/250',
+            image: 'https://picsum.photos/400/252',
           },
           {
             title: 'Lista cím4',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            image: 'https://picsum.photos/400/250',
+            image: 'https://picsum.photos/401/250',
           },
           {
             title: 'Lista cím5',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            image: 'https://picsum.photos/400/250',
+            image: 'https://picsum.photos/402/250',
           },
           {
             title: 'Lista cím6',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            image: 'https://picsum.photos/400/250',
+            image: 'https://picsum.photos/403/250',
           },
           
         ],
