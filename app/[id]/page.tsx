@@ -2,11 +2,11 @@ import { getPagesContent, getPagesSlugs } from '@/api/pages';
 import { ContentBlock } from '@/components/content-block/content-block';
 import { IContentBoxFields } from '@/types/generated/contentful';
 
-interface Page {
+export type Page = Promise<{
   id: string
   title: string
   content: string
-}
+}>
  
 export const revalidate = 60;
 export const dynamicParams = true;
@@ -24,7 +24,7 @@ export async function generateStaticParams() {
   }))
 }
  
-export default async function Page({ params }: { params: { id: string } }) {
+export default async function Page({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   
   const pageData = await getPagesContent(id);
