@@ -1,14 +1,10 @@
 'use client';
+import { IContentBoxFields } from '@/types/generated/contentful';
 import React from 'react';
 import { Card } from 'react-bootstrap';
 
 export type LeadProps = {
-  blockData: {
-    blockType: string;
-    title: string;
-    subtitle?: string;
-    description: string;
-  };
+  blockData: IContentBoxFields;
 };
 
 export const Lead = ({blockData}: LeadProps) => {
@@ -19,7 +15,7 @@ export const Lead = ({blockData}: LeadProps) => {
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         {subtitle && <Card.Subtitle>{subtitle}</Card.Subtitle>}
-        <Card.Text className='lead'>{description}</Card.Text>
+        {description && <Card.Text className='lead'>!!!</Card.Text>}
       </Card.Body>
     </Card>
   );

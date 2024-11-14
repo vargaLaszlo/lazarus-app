@@ -4,6 +4,8 @@ import { IPageFields } from '../types/generated/contentful';
 
 export const parsePages = (fields: IPageFields) => ({
   title: fields?.title || "",
+  slug: fields?.slug || undefined,
+  content: fields?.content || undefined,
 });
 
 export type PageContent = ReturnType<typeof parsePages>;

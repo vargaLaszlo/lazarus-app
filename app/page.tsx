@@ -1,4 +1,6 @@
 import { getPagesContent, getPagesSlugs } from '@/api/pages';
+import { ContentBlock } from '@/components/content-block/content-block';
+import { IContentBoxFields } from '@/types/generated/contentful';
 
 interface Page {
   id: string
@@ -26,13 +28,15 @@ export default async function Page({ params }: { params: { id: string } }) {
   const { id } = await params;
   
   const pageData = await getPagesContent(id);
-
-  const {title} = pageData;
+  const { content } = pageData;
+  console.log(pageData);
+  console.log(content);
 
   return (
     <main>
-      <h1>{title}</h1>
-      {}
+      {content?.map((block, i) => (
+        <ContentBlock blockData={block.fields as IContentBoxFields} key={Math.random() + i} />
+      ))}
     </main>
   )
 }
